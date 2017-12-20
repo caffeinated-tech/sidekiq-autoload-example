@@ -32,8 +32,8 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# 
-gem 'sidekiq'
+# use my sidekiq fork with modified constantize method
+gem 'sidekiq', git: 'https://github.com/caffeinated-tech/sidekiq.git', branch: 'constantize_nested'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
